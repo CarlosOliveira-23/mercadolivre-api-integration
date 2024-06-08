@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  postgres:
+    ports:
+      - "5432:5432"
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: fama_dist
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: teste55
+    network_mode: host
+
+
